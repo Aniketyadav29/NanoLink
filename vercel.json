@@ -4,16 +4,20 @@
     {
       "src": "url-shortener/main.py",
       "use": "@vercel/python"
+    },
+    {
+      "src": "url-shortener/static/**",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
     {
       "src": "/static/(.*)",
-      "dest": "url-shortener/static/$1"
+      "dest": "/url-shortener/static/$1"
     },
     {
       "src": "/(.*)",
-      "dest": "url-shortener/main.py"
+      "dest": "/url-shortener/main.py"
     }
   ]
 }
