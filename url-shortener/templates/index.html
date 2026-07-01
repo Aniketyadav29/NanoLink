@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener | Simple Short Links</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <nav class="nav-inner">
+            <a class="brand" href="#home" aria-label="URL Shortener home">
+                <span class="brand-mark">US</span>
+                <span>URL Shortener</span>
+            </a>
+            <div class="nav-links" aria-label="Main navigation">
+                <a href="#home">Home</a>
+                <a href="#who-we-are">Who We Are</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+            <a class="nav-action" href="#shorten">Create Link</a>
+        </nav>
+    </header>
+
+    <main id="home">
+        <section class="hero">
+            <div class="hero-depth" aria-hidden="true">
+                <span class="depth-tile tile-one"></span>
+                <span class="depth-tile tile-two"></span>
+                <span class="depth-tile tile-three"></span>
+                <span class="depth-strip strip-one"></span>
+                <span class="depth-strip strip-two"></span>
+            </div>
+
+            <div class="hero-inner">
+                <div class="hero-copy">
+                    <div class="eyebrow">Fast URL Shortening Service</div>
+                    <h1>Short links that look clean and work instantly.</h1>
+                    <p>Paste a long URL, generate a short link, and share it anywhere. Your links are saved locally in SQLite and ready to open from the browser.</p>
+                    <div class="hero-points">
+                        <span>Instant redirect</span>
+                        <span>Local database</span>
+                        <span>Copy-ready links</span>
+                    </div>
+                </div>
+
+                <section class="shortener-panel" id="shorten" aria-label="URL shortening tool">
+                    <div class="panel-header">
+                        <h2>Create Short URL</h2>
+                        <span class="status-pill">Live</span>
+                    </div>
+
+                    <form id="shorten-form">
+                        <label for="url-input">Paste Long URL</label>
+                        <input id="url-input" type="url" placeholder="https://example.com/very/long/url" required>
+                        <button type="submit">Shorten URL</button>
+                    </form>
+
+                    <div id="result">
+                        <label for="short-url">Short URL</label>
+                        <div class="result-row">
+                            <input id="short-url" type="text" readonly>
+                            <button id="copy-button" type="button">Copy</button>
+                        </div>
+                    </div>
+                    <div id="error"></div>
+                </section>
+            </div>
+        </section>
+
+        <section class="section" id="who-we-are">
+            <div class="section-inner">
+                <div class="section-title">
+                    <span>Who We Are</span>
+                    <h2>A simple tool built to make sharing links easier.</h2>
+                </div>
+
+                <div class="about-grid">
+                    <article class="about-card">
+                        <strong>Simple</strong>
+                        <p>The page focuses on one job: paste a long URL and get a short URL without confusion.</p>
+                    </article>
+                    <article class="about-card">
+                        <strong>Practical</strong>
+                        <p>Every generated short link is saved in your SQLite database so it keeps working after restart.</p>
+                    </article>
+                    <article class="about-card">
+                        <strong>Professional</strong>
+                        <p>The interface is clean, responsive, and ready for demos, college projects, or local usage.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section contact" id="contact">
+            <div class="section-inner">
+                <div class="section-title">
+                    <span>Contact Us</span>
+                    <h2>Have a question about the URL shortener?</h2>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <p>Connect with me for project details, feedback, or collaboration.</p>
+                        <strong>Email</strong>
+                        <a href="mailto:anikety7905@gmail.com">anikety7905@gmail.com</a>
+                        <strong>GitHub Profile</strong>
+                        <a href="https://github.com/Aniketyadav29" target="_blank" rel="noopener noreferrer">github.com/Aniketyadav29</a>
+                        <strong>LinkedIn Profile</strong>
+                        <a href="https://www.linkedin.com/in/aniketyadav29/" target="_blank" rel="noopener noreferrer">linkedin.com/in/aniketyadav29</a>
+                    </div>
+
+                    <form class="contact-form" id="contact-form">
+                        <label for="name">Name</label>
+                        <input id="name" type="text" placeholder="Your name" required>
+
+                        <label for="email">Email</label>
+                        <input id="email" type="email" placeholder="you@example.com" required>
+
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="Write your message" required></textarea>
+
+                        <button type="submit">Send Message</button>
+                        <div class="contact-status" id="contact-status">Thank you. Your message is ready for review.</div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        URL Shortener. Built with FastAPI and SQLite.
+    </footer>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
