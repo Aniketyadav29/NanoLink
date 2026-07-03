@@ -36,10 +36,10 @@
                 <div class="hero-copy">
                     <div class="eyebrow">Fast URL Shortening Service</div>
                     <h1>Short links that look clean and work instantly.</h1>
-                    <p>Paste a long URL, generate a short link, and share it anywhere. Your links are saved locally in SQLite and ready to open from the browser.</p>
+                    <p>Paste a long URL, generate a short link, and share it anywhere. Your links are saved in the configured database and ready to open from the browser.</p>
                     <div class="hero-points">
                         <span>Instant redirect</span>
-                        <span>Local database</span>
+                        <span>Database backed</span>
                         <span>Copy-ready links</span>
                     </div>
                 </div>
@@ -82,7 +82,7 @@
                     </article>
                     <article class="about-card">
                         <strong>Practical</strong>
-                        <p>Every generated short link is saved in your SQLite database so it keeps working after restart.</p>
+                        <p>Every generated short link is saved in the configured database so it keeps working after restart.</p>
                     </article>
                     <article class="about-card">
                         <strong>Professional</strong>
@@ -129,7 +129,7 @@
     </main>
 
     <footer>
-        URL Shortener. Built with FastAPI and SQLite.
+        URL Shortener. Built with FastAPI and database storage.
     </footer>
 
     <script src="/static/js/app.js"></script>
