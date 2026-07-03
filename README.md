@@ -4,6 +4,8 @@ NanoLink is a FastAPI URL shortener with a simple web interface. It lets users p
 
 The app uses SQLite for local development and supports Postgres in production through `DATABASE_URL` or `POSTGRES_URL`, which makes it suitable for Vercel deployment.
 
+[![Open NanoLink](https://img.shields.io/badge/Open%20NanoLink-Visit%20Website-f97316?style=for-the-badge&logo=vercel&logoColor=white)](https://nano-link-dun.vercel.app/)
+
 ## Features
 
 - Shorten long URLs from the browser
