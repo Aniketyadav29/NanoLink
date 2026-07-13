@@ -1,6 +1,6 @@
 # NanoLink - URL Shortener
 
-https://drive.google.com/file/d/1Xyn-TlS9jdxTj25TvEZmLdmi5C8sx6Ad/view?usp=drivesdk
+[![Google Drive](https://img.shields.io/badge/Google%20Drive-View%20PDF-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/file/d/1Xyn-TlS9jdxTj25TvEZmLdmi5C8sx6Ad/view?usp=drivesdk)
 
 NanoLink is a FastAPI URL shortener with a simple web interface. It lets users paste a long URL, generate a short link, copy it, and redirect back to the original URL from the generated short code.
 
